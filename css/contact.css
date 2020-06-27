@@ -8,5 +8,5 @@ body {
 }
 
 .container > p + p {
-  margin-top: 300px;
+  margin-top: 30px;
 }
