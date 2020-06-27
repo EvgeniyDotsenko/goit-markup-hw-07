@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+}
+
+.ppp {
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.container > p + p {
+  margin-top: 300px;
+}
