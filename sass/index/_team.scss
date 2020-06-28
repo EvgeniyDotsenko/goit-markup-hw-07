@@ -1,0 +1,86 @@
+// блок Наша команда, цвет унаследовал
+.team {
+  background-color: $secondary-bg;
+
+  &-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+
+  &-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &-item {
+    width: calc((100% - 3 * 30px) / 4);
+    background-color: $primary-bg-color;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  &-item > img {
+    margin-bottom: 30px;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-list {
+    display: flex;
+  }
+}
+
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+
+.team-network {
+  & > a {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    @include transition(background-color);
+  }
+
+  & > a:hover,
+  & > a:focus {
+    background-color: $accent-color;
+  }
+
+  & > a:hover .social-icon,
+  & > a:focus .social-icon {
+    fill: $primary-bg-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:first-child {
+    margin-left: 32px;
+  }
+
+  &:last-child {
+    margin-right: 32px;
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $social-icon-color;
+  @include transition(fill);
+}

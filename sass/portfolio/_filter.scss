@@ -1,0 +1,35 @@
+// фильтр Портфолио
+
+.portfolio-filter {
+  margin-bottom: 50px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+
+  &-li:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter-button {
+  background-color: $secondary-bg;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $secondary-title-color;
+  }
+}

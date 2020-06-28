@@ -4,12 +4,11 @@
   --secondary-title-color: #ffffff;
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
-  --secondary-bg-color: rgba(47, 48, 58, 0.8);
+  --decorative-bg-color: rgba(47, 48, 58, 0.8);
   --secondary-bg: #f5f4fa;
   --social-icon-color: #afb1b8;
 
   --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-time: 250ms;
 }
 
 body {
@@ -180,10 +179,10 @@ main .container {
 
 /* герой */
 .hero {
-  background: var(--secondary-bg-color);
+  background: var(--decorative-bg-color);
   background-image: linear-gradient(
-      var(--secondary-bg-color),
-      var(--secondary-bg-color)
+      var(--decorative-bg-color),
+      var(--decorative-bg-color)
     ),
     url(../img/hero-backgraund.jpg);
   background-size: cover;
@@ -309,7 +308,7 @@ main .container {
   width: 100%;
 
   color: var(--secondary-title-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--decorative-bg-color);
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -518,7 +517,7 @@ footer .logo {
 }
 
 .footer-socials .social-icon {
-  fill: var(--secondary-title-color);
+  fill: var(--primary-bg-color);
 }
 
 .socials-item > a:hover,
@@ -640,7 +639,7 @@ footer .logo {
   position: absolute;
   top: 0;
 
-  color: var(--primary-bg-color);
+  color: var(--secondary-title-color);
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   width: 100%;

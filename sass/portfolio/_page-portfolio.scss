@@ -1,0 +1,76 @@
+// Портфолио
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-item {
+  width: calc((100% - 2 * 30px) / 3);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
+.works-item > a {
+  display: block;
+  @include transition(box-shadow);
+
+  &:hover .works-desc,
+  &:focus .works-desc {
+    transform: translateY(0);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.works-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $primmary-text-color;
+}
+
+.works-desc {
+  position: absolute;
+  top: 0;
+
+  color: $secondary-title-color;
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  @include transition(transform);
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.works-title {
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 4px;
+}

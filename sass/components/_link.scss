@@ -1,0 +1,8 @@
+.link {
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,32 @@
+// блок Постоянные, клиенты цвет унаследовал
+.customer-list {
+  display: flex;
+}
+
+.customer-item {
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $social-icon-color;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+
+    fill: $social-icon-color;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & > a:hover,
+  & > a:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

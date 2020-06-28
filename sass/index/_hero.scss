@@ -1,0 +1,37 @@
+//  герой
+.hero {
+  background: $decorative-bg-color;
+  background-image: linear-gradient($decorative-bg-color, $decorative-bg-color),
+    url(../img/hero-backgraund.jpg);
+  background-size: cover;
+  background-position: center;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+
+  &-title {
+    color: $secondary-title-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &-container {
+    text-align: center;
+    width: 646px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-button {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background-color: $primary-bg-color;
+  color: $primmary-text-color;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-text-color;
+  font-size: inherit;
+  margin-top: 0;
+}
+
+button {
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}

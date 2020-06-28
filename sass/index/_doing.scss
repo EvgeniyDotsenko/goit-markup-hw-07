@@ -1,0 +1,31 @@
+//  Чем мы занимаемся
+.doing {
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-subtitle {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    color: $secondary-title-color;
+    background-color: $decorative-bg-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
