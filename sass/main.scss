@@ -3,15 +3,15 @@
 @import "./utils/base";
 
 @import "./components/container";
-@import "./components/link";
-@import "./components/button";
 
+@import "./components/button";
 @import "./components/page-header";
 @import "./components/logo";
 
 @import "./index/hero";
 @import "./index/features";
 @import "./index/doing";
+@import "./components/social-icon";
 @import "./index/team";
 @import "./index/customer";
 
@@ -19,3 +19,5 @@
 
 @import "./components/backdrop";
 @import "./index/modal";
+
+@import "./components/link";

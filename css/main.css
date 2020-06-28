@@ -77,17 +77,8 @@ header .container {
 
 /* временно убрать так, чтобы не мишало визуально */
 .features .section-title,
-.main-porfolio .section-title {
+.main-portfolio .section-title {
   display: none;
-}
-
-.link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover, .link:focus {
-  color: #2196f3;
 }
 
 .button {
@@ -330,6 +321,14 @@ header .container {
   padding-bottom: 28px;
 }
 
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .team {
   background-color: #f5f4fa;
 }
@@ -410,14 +409,6 @@ header .container {
 
 .team-network:last-child {
   margin-right: 32px;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-list {
@@ -814,5 +805,14 @@ footer .logo {
 .modal-close:focus > .close-svg,
 .modal-close:hover > .close-svg {
   --color2: $accent-color;
+}
+
+.link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover, .link:focus {
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

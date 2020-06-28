@@ -76,11 +76,3 @@
     margin-right: 32px;
   }
 }
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-
-  fill: $social-icon-color;
-  @include transition(fill);
-}
