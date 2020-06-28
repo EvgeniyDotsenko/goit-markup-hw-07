@@ -21,7 +21,7 @@
   display: inline-block;
   padding: 0;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: $font-weight-700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -80,7 +80,7 @@
 
 .modal-item > .modal-label,
 .modal-textarea > label {
-  font-weight: normal;
+  font-weight: $font-weight-400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -198,5 +198,5 @@
 
 .modal-close:focus > .close-svg,
 .modal-close:hover > .close-svg {
-  --color2: $accent-color;
+  --color2: #2196f3;
 }
